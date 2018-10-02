@@ -13,6 +13,7 @@
 		79351CA8215D1F430047875C /* GBTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79351CA7215D1F430047875C /* GBTabbarViewController.swift */; };
 		79351CAA215D26E60047875C /* GBUserCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79351CA9215D26E60047875C /* GBUserCenter.swift */; };
 		79351CAC215D2C360047875C /* GBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79351CAB215D2C360047875C /* GBLoginViewController.swift */; };
+		96B1581B2163237600F387C6 /* GBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B1581A2163237600F387C6 /* GBLoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		79351CA7215D1F430047875C /* GBTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBTabbarViewController.swift; sourceTree = "<group>"; };
 		79351CA9215D26E60047875C /* GBUserCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBUserCenter.swift; sourceTree = "<group>"; };
 		79351CAB215D2C360047875C /* GBLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBLoginViewController.swift; sourceTree = "<group>"; };
+		96B1581A2163237600F387C6 /* GBLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBLoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				79351C97215D19810047875C /* GBHomeViewController.swift */,
 				79351CA7215D1F430047875C /* GBTabbarViewController.swift */,
 				79351CAB215D2C360047875C /* GBLoginViewController.swift */,
+				96B1581A2163237600F387C6 /* GBLoginViewController.xib */,
 				79351C9C215D19870047875C /* Assets.xcassets */,
 				79351CA1215D19870047875C /* Info.plist */,
 				79351CA9215D26E60047875C /* GBUserCenter.swift */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79351C9D215D19870047875C /* Assets.xcassets in Resources */,
+				96B1581B2163237600F387C6 /* GBLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

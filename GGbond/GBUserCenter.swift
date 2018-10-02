@@ -10,18 +10,22 @@ import UIKit
 
 class GBUserCenter: NSObject {
 
+    var logined: Bool!
+    
     static var shareInstance : GBUserCenter {
         
         struct MyStatic {
             static var instance : GBUserCenter = GBUserCenter()
-            
         }
         return MyStatic.instance;
     }
     
+    func setLogined(logined: Bool) {
+        self.logined = logined
+    }
     
     func hasLogined() -> Bool{
-        return false
+        return self.logined == nil ? false : self.logined
     }
     
 }
