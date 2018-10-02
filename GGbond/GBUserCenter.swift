@@ -28,4 +28,6 @@ class GBUserCenter: NSObject {
         return self.logined == nil ? false : self.logined
     }
     
+    
+    
 }

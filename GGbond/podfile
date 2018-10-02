@@ -1,0 +1,4 @@
+target 'GGBond' do
+	pod 'Alamofire', '4.4'
+	pod 'ReactiveCocoa', '~> 7.0'
+end

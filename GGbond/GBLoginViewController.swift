@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ReactiveCocoa
 
 class GBLoginViewController: UIViewController {
 
@@ -26,7 +27,28 @@ class GBLoginViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
         self.confirmButton.layer.cornerRadius = 22
         self.vCodeFetchButton.layer.cornerRadius = 13
+        
+        self.loginButton.reactive.controlEvents(.touchUpInside).observe{ event in
+            self.vCodeTextField.isHidden = true
+            self.vCodeBottomLine.isHidden = true
+            self.vCodeFetchButton.isHidden = true
+            self.confirmButton.setTitle("登录", for: UIControlState.normal)
+            self.loginButton.setTitleColor(UIColor.orange, for: UIControlState.normal)
+            self.registerButton.setTitleColor(UIColor.hexadecimalColor(hexadecimal: "cccccc"), for: UIControlState.normal)
+        }
+        
+        self.registerButton.reactive.controlEvents(.touchUpInside).observeValues { (UIButton) in
+            self.vCodeTextField.isHidden = false
+            self.vCodeBottomLine.isHidden = false
+            self.vCodeFetchButton.isHidden = false
+            self.confirmButton.setTitle("注册", for: UIControlState.normal)
+            self.registerButton.setTitleColor(UIColor.orange, for: UIControlState.normal)
+            self.loginButton.setTitleColor(UIColor.hexadecimalColor(hexadecimal: "cccccc"), for: UIControlState.normal)
 
+        }
+        
+        
+        
     }
 
     @IBAction func buttonClicked(_ sender: Any) {

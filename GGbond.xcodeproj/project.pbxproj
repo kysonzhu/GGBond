@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0546986C23E463E8756BFD79 /* Pods_GGbond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AFFDEFDA547D5363050B04 /* Pods_GGbond.framework */; };
 		79351C96215D19810047875C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79351C95215D19810047875C /* AppDelegate.swift */; };
 		79351C98215D19810047875C /* GBHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79351C97215D19810047875C /* GBHomeViewController.swift */; };
 		79351C9D215D19870047875C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79351C9C215D19870047875C /* Assets.xcassets */; };
 		79351CA8215D1F430047875C /* GBTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79351CA7215D1F430047875C /* GBTabbarViewController.swift */; };
 		79351CAA215D26E60047875C /* GBUserCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79351CA9215D26E60047875C /* GBUserCenter.swift */; };
 		79351CAC215D2C360047875C /* GBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79351CAB215D2C360047875C /* GBLoginViewController.swift */; };
+		96479529216388300041E139 /* UIColor+RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96479528216388300041E139 /* UIColor+RGBColor.swift */; };
+		9647952B21638B0F0041E139 /* GBHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9647952A21638B0F0041E139 /* GBHomeViewController.xib */; };
+		9647952E21638FC30041E139 /* GBPropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9647952C21638FC30041E139 /* GBPropertyTableViewCell.swift */; };
+		9647952F21638FC30041E139 /* GBPropertyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9647952D21638FC30041E139 /* GBPropertyTableViewCell.xib */; };
 		96B1581B2163237600F387C6 /* GBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B1581A2163237600F387C6 /* GBLoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B0447C5143BE027798654ED /* Pods-GGbond.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGbond.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GGbond/Pods-GGbond.debug.xcconfig"; sourceTree = "<group>"; };
+		32AFFDEFDA547D5363050B04 /* Pods_GGbond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GGbond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79351C92215D19810047875C /* GGbond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GGbond.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79351C95215D19810047875C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79351C97215D19810047875C /* GBHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBHomeViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +32,12 @@
 		79351CA7215D1F430047875C /* GBTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBTabbarViewController.swift; sourceTree = "<group>"; };
 		79351CA9215D26E60047875C /* GBUserCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBUserCenter.swift; sourceTree = "<group>"; };
 		79351CAB215D2C360047875C /* GBLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBLoginViewController.swift; sourceTree = "<group>"; };
+		96479528216388300041E139 /* UIColor+RGBColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBColor.swift"; sourceTree = "<group>"; };
+		9647952A21638B0F0041E139 /* GBHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBHomeViewController.xib; sourceTree = "<group>"; };
+		9647952C21638FC30041E139 /* GBPropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBPropertyTableViewCell.swift; sourceTree = "<group>"; };
+		9647952D21638FC30041E139 /* GBPropertyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBPropertyTableViewCell.xib; sourceTree = "<group>"; };
 		96B1581A2163237600F387C6 /* GBLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBLoginViewController.xib; sourceTree = "<group>"; };
+		BD04E93BCE37CEDC09B3E404 /* Pods-GGbond.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGbond.release.xcconfig"; path = "Pods/Target Support Files/Pods-GGbond/Pods-GGbond.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0546986C23E463E8756BFD79 /* Pods_GGbond.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13812D9474E0FD9BE7D89691 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32AFFDEFDA547D5363050B04 /* Pods_GGbond.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F155245F51EEC6712B59252 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B0447C5143BE027798654ED /* Pods-GGbond.debug.xcconfig */,
+				BD04E93BCE37CEDC09B3E404 /* Pods-GGbond.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		79351C89215D19810047875C = {
 			isa = PBXGroup;
 			children = (
 				79351C94215D19810047875C /* GGbond */,
 				79351C93215D19810047875C /* Products */,
+				3F155245F51EEC6712B59252 /* Pods */,
+				13812D9474E0FD9BE7D89691 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,13 +91,17 @@
 			isa = PBXGroup;
 			children = (
 				79351C95215D19810047875C /* AppDelegate.swift */,
+				79351C9C215D19870047875C /* Assets.xcassets */,
 				79351C97215D19810047875C /* GBHomeViewController.swift */,
-				79351CA7215D1F430047875C /* GBTabbarViewController.swift */,
+				9647952A21638B0F0041E139 /* GBHomeViewController.xib */,
 				79351CAB215D2C360047875C /* GBLoginViewController.swift */,
 				96B1581A2163237600F387C6 /* GBLoginViewController.xib */,
-				79351C9C215D19870047875C /* Assets.xcassets */,
-				79351CA1215D19870047875C /* Info.plist */,
+				9647952C21638FC30041E139 /* GBPropertyTableViewCell.swift */,
+				9647952D21638FC30041E139 /* GBPropertyTableViewCell.xib */,
+				79351CA7215D1F430047875C /* GBTabbarViewController.swift */,
 				79351CA9215D26E60047875C /* GBUserCenter.swift */,
+				79351CA1215D19870047875C /* Info.plist */,
+				96479528216388300041E139 /* UIColor+RGBColor.swift */,
 			);
 			path = GGbond;
 			sourceTree = "<group>";
@@ -77,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79351CA4215D19870047875C /* Build configuration list for PBXNativeTarget "GGbond" */;
 			buildPhases = (
+				C092914F282D5957C1D1C00B /* [CP] Check Pods Manifest.lock */,
 				79351C8E215D19810047875C /* Sources */,
 				79351C8F215D19810047875C /* Frameworks */,
 				79351C90215D19810047875C /* Resources */,
+				4BAC3819D58C64E88024E0AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +168,58 @@
 			buildActionMask = 2147483647;
 			files = (
 				79351C9D215D19870047875C /* Assets.xcassets in Resources */,
+				9647952F21638FC30041E139 /* GBPropertyTableViewCell.xib in Resources */,
 				96B1581B2163237600F387C6 /* GBLoginViewController.xib in Resources */,
+				9647952B21638B0F0041E139 /* GBHomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BAC3819D58C64E88024E0AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GGbond/Pods-GGbond-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GGbond/Pods-GGbond-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C092914F282D5957C1D1C00B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GGbond-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		79351C8E215D19810047875C /* Sources */ = {
@@ -142,6 +227,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				79351C98215D19810047875C /* GBHomeViewController.swift in Sources */,
+				96479529216388300041E139 /* UIColor+RGBColor.swift in Sources */,
+				9647952E21638FC30041E139 /* GBPropertyTableViewCell.swift in Sources */,
 				79351CAC215D2C360047875C /* GBLoginViewController.swift in Sources */,
 				79351C96215D19810047875C /* AppDelegate.swift in Sources */,
 				79351CAA215D26E60047875C /* GBUserCenter.swift in Sources */,
@@ -268,39 +355,45 @@
 		};
 		79351CA5215D19870047875C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B0447C5143BE027798654ED /* Pods-GGbond.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T7Z76WDTD6;
 				INFOPLIST_FILE = GGbond/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.kyson.ggbond.GGbond;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		79351CA6215D19870047875C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD04E93BCE37CEDC09B3E404 /* Pods-GGbond.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T7Z76WDTD6;
 				INFOPLIST_FILE = GGbond/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = cn.kyson.ggbond.GGbond;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

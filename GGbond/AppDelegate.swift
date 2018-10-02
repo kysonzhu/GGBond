@@ -13,8 +13,8 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
 
         window = UIWindow.init()
         window?.frame = UIScreen.main.bounds
@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         vc.title = "首页"
         vc.view.backgroundColor = UIColor.red
         let navi = UINavigationController(rootViewController: vc)
-        
+
         let vc2 = GBHomeViewController(nibName: nil, bundle: nil)
         let navi2 = UINavigationController(rootViewController: vc2)
         vc2.title = "我的"
@@ -31,9 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabc.viewControllers = [navi,navi2]
         window?.rootViewController = tabc
         window?.makeKeyAndVisible()
-        
-        
-        
+
+
+
         return true
     }
 

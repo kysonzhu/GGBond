@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (4.4.0)
+  - ReactiveCocoa (8.0.0):
+    - ReactiveSwift (~> 4.0)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - Result (4.0.0)
+
+DEPENDENCIES:
+  - Alamofire (= 4.4)
+  - ReactiveCocoa
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - ReactiveCocoa
+    - ReactiveSwift
+    - Result
+
+SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  ReactiveCocoa: 87cb64d78424d749a0bbfd9b07e4825e8d834066
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
+
+PODFILE CHECKSUM: 1e363245a532fc092e0259b7c70810be8a95d8c3
+
+COCOAPODS: 1.5.3
