@@ -11,7 +11,6 @@ import UIKit
 class GBHomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +19,9 @@ class GBHomeViewController: UIViewController,UITableViewDelegate,UITableViewData
         self.tableView.delegate = self
         let cellNib : UINib = UINib.init(nibName: "GBPropertyTableViewCell", bundle: nil)
         self.tableView.register(cellNib, forCellReuseIdentifier: "cellReuseIdentifier")
-        
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -35,13 +36,18 @@ class GBHomeViewController: UIViewController,UITableViewDelegate,UITableViewData
         return 282
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView .deselectRow(at: indexPath, animated: true)
+        let detailViewController : GBPropertyViewController = GBPropertyViewController.init()
+        detailViewController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(detailViewController, animated: true)
+    }
+    
     // create a cell for each table view row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // create a new cell if needed or reuse an old one
         let cell:GBPropertyTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier") as! GBPropertyTableViewCell
-        
-        
         
         return cell
     }

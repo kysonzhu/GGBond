@@ -28,13 +28,10 @@ class GBLoginViewController: UIViewController {
         self.confirmButton.layer.cornerRadius = 22
         self.vCodeFetchButton.layer.cornerRadius = 13
         
+        self.loginStatus()
+        
         self.loginButton.reactive.controlEvents(.touchUpInside).observe{ event in
-            self.vCodeTextField.isHidden = true
-            self.vCodeBottomLine.isHidden = true
-            self.vCodeFetchButton.isHidden = true
-            self.confirmButton.setTitle("登录", for: UIControlState.normal)
-            self.loginButton.setTitleColor(UIColor.orange, for: UIControlState.normal)
-            self.registerButton.setTitleColor(UIColor.hexadecimalColor(hexadecimal: "cccccc"), for: UIControlState.normal)
+            self.loginStatus()
         }
         
         self.registerButton.reactive.controlEvents(.touchUpInside).observeValues { (UIButton) in
@@ -44,11 +41,37 @@ class GBLoginViewController: UIViewController {
             self.confirmButton.setTitle("注册", for: UIControlState.normal)
             self.registerButton.setTitleColor(UIColor.orange, for: UIControlState.normal)
             self.loginButton.setTitleColor(UIColor.hexadecimalColor(hexadecimal: "cccccc"), for: UIControlState.normal)
-
         }
         
+        self.mobileTextField.reactive.continuousTextValues.observeValues { (text) in
+            self.defaultBottomLineStatus()
+            self.mobileTextBottomLine.backgroundColor = UIColor.orange
+        }
         
+        self.passwordTextField.reactive.continuousTextValues.observeValues { (text) in
+            self.defaultBottomLineStatus()
+            self.passwordTextBottomLine.backgroundColor = UIColor.orange
+        }
         
+        self.vCodeTextField.reactive.continuousTextValues.observeValues { (text) in
+            self.defaultBottomLineStatus()
+            self.vCodeBottomLine.backgroundColor = UIColor.orange
+        }
+    }
+    
+    private func defaultBottomLineStatus() {
+        self.mobileTextBottomLine.backgroundColor = UIColor.hexadecimalColor(hexadecimal: "cccccc")
+        self.passwordTextBottomLine.backgroundColor = UIColor.hexadecimalColor(hexadecimal: "cccccc")
+        self.vCodeBottomLine.backgroundColor = UIColor.hexadecimalColor(hexadecimal: "cccccc")
+    }
+    
+    private func loginStatus() {
+        self.vCodeTextField.isHidden = true
+        self.vCodeBottomLine.isHidden = true
+        self.vCodeFetchButton.isHidden = true
+        self.confirmButton.setTitle("登录", for: UIControlState.normal)
+        self.loginButton.setTitleColor(UIColor.orange, for: UIControlState.normal)
+        self.registerButton.setTitleColor(UIColor.hexadecimalColor(hexadecimal: "cccccc"), for: UIControlState.normal)
     }
 
     @IBAction func buttonClicked(_ sender: Any) {

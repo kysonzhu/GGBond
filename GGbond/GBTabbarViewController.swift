@@ -21,7 +21,9 @@ class GBTabbarViewController: UITabBarController {
                 
             })
         }
+
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
