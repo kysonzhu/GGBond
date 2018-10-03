@@ -10,26 +10,51 @@ import UIKit
 
 class GBPayInfoViewController: UIViewController {
 
+    @IBOutlet weak var multiDayBookButton: UIButton!
+    @IBOutlet weak var addressButton: UIButton!
+    @IBOutlet weak var manButton: UIButton!
+    @IBOutlet weak var womanButton: UIButton!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var telTextField: UITextField!
+    @IBOutlet weak var gobackButton: UIButton!
+    @IBOutlet weak var confirmButton: UIButton!
+    
+    @IBOutlet weak var separatorView1: UIView!
+    @IBOutlet weak var separatorView2: UIView!
+    @IBOutlet weak var separatorView3: UIView!
+    @IBOutlet weak var separatorView4: UIView!
+    @IBOutlet weak var separatorView5: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.title = "选择送餐地点"
+        
+        self.manButton.layer.cornerRadius = 15
+        self.manButton.layer.masksToBounds = true
+        
+        self.womanButton.layer.cornerRadius = 15
+        self.womanButton.layer.masksToBounds = true
+        
+        self.gobackButton.layer.cornerRadius = 20
+        self.gobackButton.layer.masksToBounds = true
+        
+        self.confirmButton.layer.cornerRadius = 20
+        self.confirmButton.layer.masksToBounds = true
+        
+        self.gobackButton.reactive.controlEvents(.touchUpInside).observe{ event in
+            self.navigationController?.popViewController(animated: true)
+        }
+        
+        self.confirmButton.reactive.controlEvents(.touchUpInside).observe{ event in
+            let payViewController : GBPayActionViewController = GBPayActionViewController.init()
+            self.navigationController?.pushViewController(payViewController, animated: true)
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
 
 }

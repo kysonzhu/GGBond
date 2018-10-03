@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         vc.view.backgroundColor = UIColor.red
         let navi = UINavigationController(rootViewController: vc)
 
-        let vc2 = GBHomeViewController(nibName: nil, bundle: nil)
+        let vc2 = GBPersonalCenterViewController(nibName: nil, bundle: nil)
         let navi2 = UINavigationController(rootViewController: vc2)
         vc2.title = "我的"
 
