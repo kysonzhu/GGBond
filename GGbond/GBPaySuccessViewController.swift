@@ -14,9 +14,19 @@ class GBPaySuccessViewController: GBBaseViewController {
         super.viewDidLoad()
         self.title = "支付成功"
         
-//        let item :UINavigationItem = UINavigationItem.init(title: "返回")
-//        self.navigationItem.leftBarButtonItem
+        let leftButton = UIButton.init(type: UIButtonType.system)
+        leftButton.frame = CGRect.init(x: 0, y: 0, width: 10, height: 10)
+        leftButton.setBackgroundImage(UIImage.init(named: "back"), for: UIControlState.normal)
+        leftButton.addTarget(self, action: #selector(leftButtonClicked), for: UIControlEvents.touchUpInside)
+        let leftItem = UIBarButtonItem.init(customView: leftButton)
+        let spaceItem = UIBarButtonItem.init(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
+        spaceItem.width = -15;
+        self.navigationItem.leftBarButtonItems = [spaceItem,leftItem]
 
+    }
+    
+    @objc func leftButtonClicked() -> Void {
+        self.navigationController?.popToRootViewController(animated: true)
     }
 
     override func didReceiveMemoryWarning() {
