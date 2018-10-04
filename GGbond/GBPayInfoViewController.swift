@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GBPayInfoViewController: UIViewController {
+class GBPayInfoViewController: GBBaseViewController {
 
     @IBOutlet weak var multiDayBookButton: UIButton!
     @IBOutlet weak var addressButton: UIButton!

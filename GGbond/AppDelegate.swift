@@ -18,25 +18,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow.init()
         window?.frame = UIScreen.main.bounds
+        
         let vc = GBHomeViewController(nibName: nil, bundle: nil)
-        vc.title = "首页"
-        vc.view.backgroundColor = UIColor.red
+        vc.tabBarItem = UITabBarItem.init(title: "首页", image: UIImage.init(named: "tab_home"), selectedImage: UIImage.init(named: "tab_home"))
         let navi = UINavigationController(rootViewController: vc)
 
         let vc2 = GBPersonalCenterViewController(nibName: nil, bundle: nil)
+        vc2.tabBarItem = UITabBarItem.init(title: "首页", image: UIImage.init(named: "tab_person_unselected"), selectedImage: UIImage.init(named: "tab_person_unselected"))
+        
         let navi2 = UINavigationController(rootViewController: vc2)
         vc2.title = "我的"
 
         let tabc = GBTabbarViewController(nibName: nil, bundle: nil)
         tabc.viewControllers = [navi,navi2]
         window?.rootViewController = tabc
+        
+        //获取navBar的全局代理对象
+        let allNavBar = UINavigationBar.appearance();
+        var backImage : UIImage = UIImage.init(named: "back")!
+        backImage = backImage.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        allNavBar.backIndicatorImage = backImage
+        allNavBar.backIndicatorTransitionMaskImage = backImage
+        allNavBar.setBackgroundImage(UIImage.creatImageWithColor(color: UIColor.white), for: UIBarMetrics.default)
+        //获取barButtonItem的全局对象
+        let allBarButtonItem = UIBarButtonItem.appearance()
+        allBarButtonItem.setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -60), for: UIBarMetrics.default)
+
         window?.makeKeyAndVisible()
-
-
 
         return true
     }
-
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

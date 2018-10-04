@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GBPropertyViewController: UIViewController {
+class GBPropertyViewController: GBBaseViewController {
 
     @IBOutlet weak var goPayButton: UIButton!
     

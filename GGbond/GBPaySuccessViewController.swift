@@ -8,13 +8,14 @@
 
 import UIKit
 
-class GBPaySuccessViewController: UIViewController {
+class GBPaySuccessViewController: GBBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "支付成功"
-
         
+//        let item :UINavigationItem = UINavigationItem.init(title: "返回")
+//        self.navigationItem.leftBarButtonItem
 
     }
 

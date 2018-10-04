@@ -9,7 +9,7 @@
 import UIKit
 import ReactiveCocoa
 
-class GBLoginViewController: UIViewController {
+class GBLoginViewController: GBBaseViewController {
 
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!

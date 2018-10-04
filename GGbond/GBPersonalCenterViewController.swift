@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GBPersonalCenterViewController: UIViewController {
+class GBPersonalCenterViewController: GBBaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

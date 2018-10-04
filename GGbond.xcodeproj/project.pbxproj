@@ -28,6 +28,8 @@
 		9647953F216483640041E139 /* GBPayActionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9647953D216483640041E139 /* GBPayActionViewController.xib */; };
 		96479542216487130041E139 /* GBPaySuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96479540216487130041E139 /* GBPaySuccessViewController.swift */; };
 		96479543216487130041E139 /* GBPaySuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96479541216487130041E139 /* GBPaySuccessViewController.xib */; };
+		96479549216604D30041E139 /* GBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96479548216604D30041E139 /* GBBaseViewController.swift */; };
+		9647954B2166086D0041E139 /* UIImage+GB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9647954A2166086D0041E139 /* UIImage+GB.swift */; };
 		96B1581B2163237600F387C6 /* GBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B1581A2163237600F387C6 /* GBLoginViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		9647953D216483640041E139 /* GBPayActionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBPayActionViewController.xib; sourceTree = "<group>"; };
 		96479540216487130041E139 /* GBPaySuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBPaySuccessViewController.swift; sourceTree = "<group>"; };
 		96479541216487130041E139 /* GBPaySuccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBPaySuccessViewController.xib; sourceTree = "<group>"; };
+		96479548216604D30041E139 /* GBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBBaseViewController.swift; sourceTree = "<group>"; };
+		9647954A2166086D0041E139 /* UIImage+GB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+GB.swift"; sourceTree = "<group>"; };
 		96B1581A2163237600F387C6 /* GBLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBLoginViewController.xib; sourceTree = "<group>"; };
 		BD04E93BCE37CEDC09B3E404 /* Pods-GGbond.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGbond.release.xcconfig"; path = "Pods/Target Support Files/Pods-GGbond/Pods-GGbond.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -132,6 +136,8 @@
 				9647953D216483640041E139 /* GBPayActionViewController.xib */,
 				96479540216487130041E139 /* GBPaySuccessViewController.swift */,
 				96479541216487130041E139 /* GBPaySuccessViewController.xib */,
+				96479548216604D30041E139 /* GBBaseViewController.swift */,
+				9647954A2166086D0041E139 /* UIImage+GB.swift */,
 			);
 			path = GGbond;
 			sourceTree = "<group>";
@@ -265,8 +271,10 @@
 				96479529216388300041E139 /* UIColor+RGBColor.swift in Sources */,
 				9647953A216482D10041E139 /* GBPersonalCenterViewController.swift in Sources */,
 				9647952E21638FC30041E139 /* GBPropertyTableViewCell.swift in Sources */,
+				9647954B2166086D0041E139 /* UIImage+GB.swift in Sources */,
 				79351CAC215D2C360047875C /* GBLoginViewController.swift in Sources */,
 				79351C96215D19810047875C /* AppDelegate.swift in Sources */,
+				96479549216604D30041E139 /* GBBaseViewController.swift in Sources */,
 				79351CAA215D26E60047875C /* GBUserCenter.swift in Sources */,
 				964795322163DECB0041E139 /* GBPropertyViewController.swift in Sources */,
 				96479542216487130041E139 /* GBPaySuccessViewController.swift in Sources */,

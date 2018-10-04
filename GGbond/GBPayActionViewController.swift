@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GBPayActionViewController: UIViewController {
+class GBPayActionViewController: GBBaseViewController {
 
     @IBOutlet weak var timeButton: UIButton!
     @IBOutlet weak var addressButton: UIButton!
