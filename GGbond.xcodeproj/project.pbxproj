@@ -14,6 +14,14 @@
 		79351CA8215D1F430047875C /* GBTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79351CA7215D1F430047875C /* GBTabbarViewController.swift */; };
 		79351CAA215D26E60047875C /* GBUserCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79351CA9215D26E60047875C /* GBUserCenter.swift */; };
 		79351CAC215D2C360047875C /* GBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79351CAB215D2C360047875C /* GBLoginViewController.swift */; };
+		9624453721675C8000898089 /* GBPropertyDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624453521675C8000898089 /* GBPropertyDetailCell.swift */; };
+		9624453821675C8000898089 /* GBPropertyDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9624453621675C8000898089 /* GBPropertyDetailCell.xib */; };
+		9624453B21675E2000898089 /* GBCookerSummeryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624453921675E2000898089 /* GBCookerSummeryCell.swift */; };
+		9624453C21675E2000898089 /* GBCookerSummeryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9624453A21675E2000898089 /* GBCookerSummeryCell.xib */; };
+		9624453F2167707B00898089 /* GBCookerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624453D2167707B00898089 /* GBCookerDetailViewController.swift */; };
+		962445402167707B00898089 /* GBCookerDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9624453E2167707B00898089 /* GBCookerDetailViewController.xib */; };
+		962445472167750800898089 /* GBCookerTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962445452167750800898089 /* GBCookerTitleCell.swift */; };
+		962445482167750800898089 /* GBCookerTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 962445462167750800898089 /* GBCookerTitleCell.xib */; };
 		96479529216388300041E139 /* UIColor+RGBColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96479528216388300041E139 /* UIColor+RGBColor.swift */; };
 		9647952B21638B0F0041E139 /* GBHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9647952A21638B0F0041E139 /* GBHomeViewController.xib */; };
 		9647952E21638FC30041E139 /* GBPropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9647952C21638FC30041E139 /* GBPropertyTableViewCell.swift */; };
@@ -53,6 +61,14 @@
 		79351CA7215D1F430047875C /* GBTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBTabbarViewController.swift; sourceTree = "<group>"; };
 		79351CA9215D26E60047875C /* GBUserCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBUserCenter.swift; sourceTree = "<group>"; };
 		79351CAB215D2C360047875C /* GBLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBLoginViewController.swift; sourceTree = "<group>"; };
+		9624453521675C8000898089 /* GBPropertyDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBPropertyDetailCell.swift; sourceTree = "<group>"; };
+		9624453621675C8000898089 /* GBPropertyDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBPropertyDetailCell.xib; sourceTree = "<group>"; };
+		9624453921675E2000898089 /* GBCookerSummeryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBCookerSummeryCell.swift; sourceTree = "<group>"; };
+		9624453A21675E2000898089 /* GBCookerSummeryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBCookerSummeryCell.xib; sourceTree = "<group>"; };
+		9624453D2167707B00898089 /* GBCookerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBCookerDetailViewController.swift; sourceTree = "<group>"; };
+		9624453E2167707B00898089 /* GBCookerDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBCookerDetailViewController.xib; sourceTree = "<group>"; };
+		962445452167750800898089 /* GBCookerTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBCookerTitleCell.swift; sourceTree = "<group>"; };
+		962445462167750800898089 /* GBCookerTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBCookerTitleCell.xib; sourceTree = "<group>"; };
 		96479528216388300041E139 /* UIColor+RGBColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBColor.swift"; sourceTree = "<group>"; };
 		9647952A21638B0F0041E139 /* GBHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBHomeViewController.xib; sourceTree = "<group>"; };
 		9647952C21638FC30041E139 /* GBPropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBPropertyTableViewCell.swift; sourceTree = "<group>"; };
@@ -165,6 +181,14 @@
 				9647955821670D920041E139 /* GBPropertyCollectionViewCell.swift */,
 				9647955921670D920041E139 /* GBPropertyCollectionViewCell.xib */,
 				9647955C216711BE0041E139 /* GBPropertyFlowLayout.swift */,
+				9624453521675C8000898089 /* GBPropertyDetailCell.swift */,
+				9624453621675C8000898089 /* GBPropertyDetailCell.xib */,
+				9624453921675E2000898089 /* GBCookerSummeryCell.swift */,
+				9624453A21675E2000898089 /* GBCookerSummeryCell.xib */,
+				9624453D2167707B00898089 /* GBCookerDetailViewController.swift */,
+				9624453E2167707B00898089 /* GBCookerDetailViewController.xib */,
+				962445452167750800898089 /* GBCookerTitleCell.swift */,
+				962445462167750800898089 /* GBCookerTitleCell.xib */,
 			);
 			path = GGbond;
 			sourceTree = "<group>";
@@ -238,10 +262,14 @@
 				964795372163E8BC0041E139 /* GBPayInfoViewController.xib in Resources */,
 				9647955B21670D920041E139 /* GBPropertyCollectionViewCell.xib in Resources */,
 				964795332163DECB0041E139 /* GBPropertyViewController.xib in Resources */,
+				962445482167750800898089 /* GBCookerTitleCell.xib in Resources */,
 				9647955321666A1A0041E139 /* GBPersonalCenterCell.xib in Resources */,
+				9624453C21675E2000898089 /* GBCookerSummeryCell.xib in Resources */,
 				96B1581B2163237600F387C6 /* GBLoginViewController.xib in Resources */,
+				9624453821675C8000898089 /* GBPropertyDetailCell.xib in Resources */,
 				9647953F216483640041E139 /* GBPayActionViewController.xib in Resources */,
 				9647952B21638B0F0041E139 /* GBHomeViewController.xib in Resources */,
+				962445402167707B00898089 /* GBCookerDetailViewController.xib in Resources */,
 				9647954F2166692B0041E139 /* GBPersonalHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +288,7 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -267,6 +296,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -300,6 +330,7 @@
 			files = (
 				79351C98215D19810047875C /* GBHomeViewController.swift in Sources */,
 				96479529216388300041E139 /* UIColor+RGBColor.swift in Sources */,
+				9624453B21675E2000898089 /* GBCookerSummeryCell.swift in Sources */,
 				9647953A216482D10041E139 /* GBPersonalCenterViewController.swift in Sources */,
 				9647955221666A1A0041E139 /* GBPersonalCenterCell.swift in Sources */,
 				9647954D216667D50041E139 /* GBPersonalHeaderView.swift in Sources */,
@@ -310,8 +341,11 @@
 				79351C96215D19810047875C /* AppDelegate.swift in Sources */,
 				96479556216673F10041E139 /* GBSettingViewController.swift in Sources */,
 				96479549216604D30041E139 /* GBBaseViewController.swift in Sources */,
+				9624453F2167707B00898089 /* GBCookerDetailViewController.swift in Sources */,
+				962445472167750800898089 /* GBCookerTitleCell.swift in Sources */,
 				79351CAA215D26E60047875C /* GBUserCenter.swift in Sources */,
 				964795322163DECB0041E139 /* GBPropertyViewController.swift in Sources */,
+				9624453721675C8000898089 /* GBPropertyDetailCell.swift in Sources */,
 				96479542216487130041E139 /* GBPaySuccessViewController.swift in Sources */,
 				79351CA8215D1F430047875C /* GBTabbarViewController.swift in Sources */,
 				9647953E216483640041E139 /* GBPayActionViewController.swift in Sources */,

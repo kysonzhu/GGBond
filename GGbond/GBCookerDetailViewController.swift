@@ -9,9 +9,9 @@
 import UIKit
 import SnapKit
 
-class GBPropertyViewController: GBBaseViewController,UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource {
-
-    @IBOutlet weak var goPayButton: UIButton!
+class GBCookerDetailViewController: GBBaseViewController,UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource {
+    
+//    @IBOutlet weak var goPayButton: UIButton!
     var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,11 +19,11 @@ class GBPropertyViewController: GBBaseViewController,UICollectionViewDelegate,UI
         super.viewDidLoad()
         self.title = "详情"
         
-        self.goPayButton.reactive.controlEvents(.touchUpInside).observe{ event in
-            let infoViewController : GBPayInfoViewController = GBPayInfoViewController.init()
-            self.navigationController?.pushViewController(infoViewController, animated: true)
-        }
-
+//        self.goPayButton.reactive.controlEvents(.touchUpInside).observe{ event in
+//            let infoViewController : GBPayInfoViewController = GBPayInfoViewController.init()
+//            self.navigationController?.pushViewController(infoViewController, animated: true)
+//        }
+        
         let flowLayout : GBPropertyFlowLayout = GBPropertyFlowLayout.init()
         flowLayout.scrollDirection = UICollectionViewScrollDirection.horizontal
         flowLayout.itemSize = CGSize.init(width: UIScreen.main.bounds.size.width, height: 190);
@@ -32,16 +32,16 @@ class GBPropertyViewController: GBBaseViewController,UICollectionViewDelegate,UI
         
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-
+        
         self.collectionView.collectionViewLayout = flowLayout
         self.collectionView.isPagingEnabled = true
         self.collectionView.showsHorizontalScrollIndicator = false
-
+        
         self.collectionView.register(UINib.init(nibName: "GBPropertyCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "GBPropertyCollectionViewCell")
         
         self.tableView.tableHeaderView = self.collectionView
-
-        self.tableView.register(UINib.init(nibName: "GBPropertyDetailCell", bundle: nil), forCellReuseIdentifier: "GBPropertyDetailCell")
+        
+        self.tableView.register(UINib.init(nibName: "GBCookerTitleCell", bundle: nil), forCellReuseIdentifier: "GBCookerTitleCell")
         self.tableView.register(UINib.init(nibName: "GBCookerSummeryCell", bundle: nil), forCellReuseIdentifier: "GBCookerSummeryCell")
         
         self.tableView.delegate = self
@@ -54,7 +54,7 @@ class GBPropertyViewController: GBBaseViewController,UICollectionViewDelegate,UI
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "GBPropertyDetailCell", for: indexPath)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "GBCookerTitleCell", for: indexPath)
             return cell
         }
         
@@ -97,7 +97,8 @@ class GBPropertyViewController: GBBaseViewController,UICollectionViewDelegate,UI
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-
+        
     }
     
 }
+

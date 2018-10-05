@@ -11,8 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GBPropertyViewController" customModule="GGbond" customModuleProvider="target">
             <connections>
-                <outlet property="collectionView" destination="485-is-Bor" id="Wca-c9-Gys"/>
                 <outlet property="goPayButton" destination="5Ku-09-gn4" id="fvq-mb-Dlw"/>
+                <outlet property="tableView" destination="OV2-JI-Mma" id="2wN-mP-Hez"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,17 +21,6 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="485-is-Bor">
-                    <rect key="frame" x="0.0" y="-1" width="375" height="195"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.57254901960000004" green="0.57254901960000004" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="B47-1S-WoD">
-                        <size key="itemSize" width="375" height="195"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9aS-9Z-waG">
                     <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                     <subviews>
@@ -39,17 +28,10 @@
                             <rect key="frame" x="278" y="0.0" width="97" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.59607843137254901" green="0.59607843137254901" blue="0.59607843137254901" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="去支付">
+                            <state key="normal" title="下单">
                                 <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </state>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="购物车(0)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0p-t1-h7X">
-                            <rect key="frame" x="165" y="0.0" width="86" height="50"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="￥0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5P-jJ-dOz">
                             <rect key="frame" x="71" y="0.0" width="86" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
@@ -57,27 +39,36 @@
                             <color key="textColor" red="1" green="0.17647058823529413" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cart" translatesAutoresizingMaskIntoConstraints="NO" id="9R1-Sl-WJs">
-                            <rect key="frame" x="8" y="-9" width="49" height="46"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2j5-ZR-daJ">
+                            <rect key="frame" x="180" y="0.0" width="97" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.59607843140000005" green="0.59607843140000005" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="加入购物车">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.25882352941176473" green="0.25882352941176473" blue="0.25882352941176473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="9xc-4B-64k"/>
                     </constraints>
                 </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OV2-JI-Mma">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="OV2-JI-Mma" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="A7j-wB-lUt"/>
                 <constraint firstItem="9aS-9Z-waG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AmN-tc-IWh"/>
+                <constraint firstItem="9aS-9Z-waG" firstAttribute="top" secondItem="OV2-JI-Mma" secondAttribute="bottom" id="Ny1-GM-o7F"/>
+                <constraint firstAttribute="trailing" secondItem="OV2-JI-Mma" secondAttribute="trailing" id="QzU-mD-k2k"/>
                 <constraint firstAttribute="trailing" secondItem="9aS-9Z-waG" secondAttribute="trailing" id="Wv8-Ly-FWt"/>
+                <constraint firstItem="OV2-JI-Mma" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fsI-nM-VWy"/>
                 <constraint firstAttribute="bottom" secondItem="9aS-9Z-waG" secondAttribute="bottom" id="mlG-X8-dmp"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="cart" width="48" height="48"/>
-    </resources>
 </document>

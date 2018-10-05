@@ -47,7 +47,6 @@ class GBHomeViewController: GBBaseViewController,UITableViewDelegate,UITableView
     // create a cell for each table view row
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        // create a new cell if needed or reuse an old one
         let cell:GBPropertyTableViewCell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier") as! GBPropertyTableViewCell
         
         return cell
