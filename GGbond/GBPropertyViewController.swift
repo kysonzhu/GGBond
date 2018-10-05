@@ -8,37 +8,50 @@
 
 import UIKit
 
-class GBPropertyViewController: GBBaseViewController {
+class GBPropertyViewController: GBBaseViewController,UICollectionViewDelegate,UICollectionViewDataSource {
 
     @IBOutlet weak var goPayButton: UIButton!
-    
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "详情"
         
         self.goPayButton.reactive.controlEvents(.touchUpInside).observe{ event in
             let infoViewController : GBPayInfoViewController = GBPayInfoViewController.init()
             self.navigationController?.pushViewController(infoViewController, animated: true)
         }
+        
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        let flowLayout : GBPropertyFlowLayout = GBPropertyFlowLayout.init()
+        flowLayout.scrollDirection = UICollectionViewScrollDirection.horizontal
+        flowLayout.itemSize = CGSize.init(width: UIScreen.main.bounds.size.width, height: 190);
 
-        // Do any additional setup after loading the view.
-    }
+        self.collectionView.collectionViewLayout = flowLayout
+        self.collectionView.isPagingEnabled = true
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.collectionView.register(UINib.init(nibName: "GBPropertyCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "GBPropertyCollectionViewCell")
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 3
     }
-    */
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GBPropertyCollectionViewCell", for: indexPath)
+        
+        return cell
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
 
+    }
+    
 }

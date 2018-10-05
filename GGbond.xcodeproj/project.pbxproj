@@ -30,6 +30,15 @@
 		96479543216487130041E139 /* GBPaySuccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96479541216487130041E139 /* GBPaySuccessViewController.xib */; };
 		96479549216604D30041E139 /* GBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96479548216604D30041E139 /* GBBaseViewController.swift */; };
 		9647954B2166086D0041E139 /* UIImage+GB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9647954A2166086D0041E139 /* UIImage+GB.swift */; };
+		9647954D216667D50041E139 /* GBPersonalHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9647954C216667D50041E139 /* GBPersonalHeaderView.swift */; };
+		9647954F2166692B0041E139 /* GBPersonalHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9647954E2166692B0041E139 /* GBPersonalHeaderView.xib */; };
+		9647955221666A1A0041E139 /* GBPersonalCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9647955021666A1A0041E139 /* GBPersonalCenterCell.swift */; };
+		9647955321666A1A0041E139 /* GBPersonalCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9647955121666A1A0041E139 /* GBPersonalCenterCell.xib */; };
+		96479556216673F10041E139 /* GBSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96479554216673F10041E139 /* GBSettingViewController.swift */; };
+		96479557216673F10041E139 /* GBSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96479555216673F10041E139 /* GBSettingViewController.xib */; };
+		9647955A21670D920041E139 /* GBPropertyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9647955821670D920041E139 /* GBPropertyCollectionViewCell.swift */; };
+		9647955B21670D920041E139 /* GBPropertyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9647955921670D920041E139 /* GBPropertyCollectionViewCell.xib */; };
+		9647955D216711BE0041E139 /* GBPropertyFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9647955C216711BE0041E139 /* GBPropertyFlowLayout.swift */; };
 		96B1581B2163237600F387C6 /* GBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96B1581A2163237600F387C6 /* GBLoginViewController.xib */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +69,15 @@
 		96479541216487130041E139 /* GBPaySuccessViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBPaySuccessViewController.xib; sourceTree = "<group>"; };
 		96479548216604D30041E139 /* GBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBBaseViewController.swift; sourceTree = "<group>"; };
 		9647954A2166086D0041E139 /* UIImage+GB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+GB.swift"; sourceTree = "<group>"; };
+		9647954C216667D50041E139 /* GBPersonalHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBPersonalHeaderView.swift; sourceTree = "<group>"; };
+		9647954E2166692B0041E139 /* GBPersonalHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBPersonalHeaderView.xib; sourceTree = "<group>"; };
+		9647955021666A1A0041E139 /* GBPersonalCenterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBPersonalCenterCell.swift; sourceTree = "<group>"; };
+		9647955121666A1A0041E139 /* GBPersonalCenterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBPersonalCenterCell.xib; sourceTree = "<group>"; };
+		96479554216673F10041E139 /* GBSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBSettingViewController.swift; sourceTree = "<group>"; };
+		96479555216673F10041E139 /* GBSettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBSettingViewController.xib; sourceTree = "<group>"; };
+		9647955821670D920041E139 /* GBPropertyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBPropertyCollectionViewCell.swift; sourceTree = "<group>"; };
+		9647955921670D920041E139 /* GBPropertyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBPropertyCollectionViewCell.xib; sourceTree = "<group>"; };
+		9647955C216711BE0041E139 /* GBPropertyFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBPropertyFlowLayout.swift; sourceTree = "<group>"; };
 		96B1581A2163237600F387C6 /* GBLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBLoginViewController.xib; sourceTree = "<group>"; };
 		BD04E93BCE37CEDC09B3E404 /* Pods-GGbond.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GGbond.release.xcconfig"; path = "Pods/Target Support Files/Pods-GGbond/Pods-GGbond.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +156,15 @@
 				96479541216487130041E139 /* GBPaySuccessViewController.xib */,
 				96479548216604D30041E139 /* GBBaseViewController.swift */,
 				9647954A2166086D0041E139 /* UIImage+GB.swift */,
+				9647954C216667D50041E139 /* GBPersonalHeaderView.swift */,
+				9647954E2166692B0041E139 /* GBPersonalHeaderView.xib */,
+				9647955021666A1A0041E139 /* GBPersonalCenterCell.swift */,
+				9647955121666A1A0041E139 /* GBPersonalCenterCell.xib */,
+				96479554216673F10041E139 /* GBSettingViewController.swift */,
+				96479555216673F10041E139 /* GBSettingViewController.xib */,
+				9647955821670D920041E139 /* GBPropertyCollectionViewCell.swift */,
+				9647955921670D920041E139 /* GBPropertyCollectionViewCell.xib */,
+				9647955C216711BE0041E139 /* GBPropertyFlowLayout.swift */,
 			);
 			path = GGbond;
 			sourceTree = "<group>";
@@ -205,13 +232,17 @@
 			files = (
 				79351C9D215D19870047875C /* Assets.xcassets in Resources */,
 				9647953B216482D10041E139 /* GBPersonalCenterViewController.xib in Resources */,
+				96479557216673F10041E139 /* GBSettingViewController.xib in Resources */,
 				96479543216487130041E139 /* GBPaySuccessViewController.xib in Resources */,
 				9647952F21638FC30041E139 /* GBPropertyTableViewCell.xib in Resources */,
 				964795372163E8BC0041E139 /* GBPayInfoViewController.xib in Resources */,
+				9647955B21670D920041E139 /* GBPropertyCollectionViewCell.xib in Resources */,
 				964795332163DECB0041E139 /* GBPropertyViewController.xib in Resources */,
+				9647955321666A1A0041E139 /* GBPersonalCenterCell.xib in Resources */,
 				96B1581B2163237600F387C6 /* GBLoginViewController.xib in Resources */,
 				9647953F216483640041E139 /* GBPayActionViewController.xib in Resources */,
 				9647952B21638B0F0041E139 /* GBHomeViewController.xib in Resources */,
+				9647954F2166692B0041E139 /* GBPersonalHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,16 +301,21 @@
 				79351C98215D19810047875C /* GBHomeViewController.swift in Sources */,
 				96479529216388300041E139 /* UIColor+RGBColor.swift in Sources */,
 				9647953A216482D10041E139 /* GBPersonalCenterViewController.swift in Sources */,
+				9647955221666A1A0041E139 /* GBPersonalCenterCell.swift in Sources */,
+				9647954D216667D50041E139 /* GBPersonalHeaderView.swift in Sources */,
 				9647952E21638FC30041E139 /* GBPropertyTableViewCell.swift in Sources */,
+				9647955D216711BE0041E139 /* GBPropertyFlowLayout.swift in Sources */,
 				9647954B2166086D0041E139 /* UIImage+GB.swift in Sources */,
 				79351CAC215D2C360047875C /* GBLoginViewController.swift in Sources */,
 				79351C96215D19810047875C /* AppDelegate.swift in Sources */,
+				96479556216673F10041E139 /* GBSettingViewController.swift in Sources */,
 				96479549216604D30041E139 /* GBBaseViewController.swift in Sources */,
 				79351CAA215D26E60047875C /* GBUserCenter.swift in Sources */,
 				964795322163DECB0041E139 /* GBPropertyViewController.swift in Sources */,
 				96479542216487130041E139 /* GBPaySuccessViewController.swift in Sources */,
 				79351CA8215D1F430047875C /* GBTabbarViewController.swift in Sources */,
 				9647953E216483640041E139 /* GBPayActionViewController.swift in Sources */,
+				9647955A21670D920041E139 /* GBPropertyCollectionViewCell.swift in Sources */,
 				964795362163E8BC0041E139 /* GBPayInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

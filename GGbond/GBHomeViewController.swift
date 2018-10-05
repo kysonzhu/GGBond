@@ -14,6 +14,7 @@ class GBHomeViewController: GBBaseViewController,UITableViewDelegate,UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "首页"
 
         self.tableView.dataSource = self
         self.tableView.delegate = self
