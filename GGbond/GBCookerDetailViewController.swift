@@ -11,18 +11,12 @@ import SnapKit
 
 class GBCookerDetailViewController: GBBaseViewController,UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource {
     
-//    @IBOutlet weak var goPayButton: UIButton!
     var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "详情"
-        
-//        self.goPayButton.reactive.controlEvents(.touchUpInside).observe{ event in
-//            let infoViewController : GBPayInfoViewController = GBPayInfoViewController.init()
-//            self.navigationController?.pushViewController(infoViewController, animated: true)
-//        }
         
         let flowLayout : GBPropertyFlowLayout = GBPropertyFlowLayout.init()
         flowLayout.scrollDirection = UICollectionViewScrollDirection.horizontal
@@ -49,7 +43,7 @@ class GBCookerDetailViewController: GBBaseViewController,UICollectionViewDelegat
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
