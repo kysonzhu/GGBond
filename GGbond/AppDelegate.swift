@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import LeanCloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
 
+        // applicationId 即 App Id，applicationKey 是 App Key
+        LeanCloud.initialize(applicationID: "464d3rd62hB80GQms4jC92WR-gzGzoHsz", applicationKey: "xclFt9SGyklanPjobSkRbWtD")
+        
         window = UIWindow.init()
         window?.frame = UIScreen.main.bounds
         
@@ -45,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         allBarButtonItem.setBackButtonTitlePositionAdjustment(UIOffsetMake(0, -60), for: UIBarMetrics.default)
 
         window?.makeKeyAndVisible()
-
+        
         return true
     }
     

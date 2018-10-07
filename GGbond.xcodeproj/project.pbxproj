@@ -14,6 +14,9 @@
 		79351CA8215D1F430047875C /* GBTabbarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79351CA7215D1F430047875C /* GBTabbarViewController.swift */; };
 		79351CAA215D26E60047875C /* GBUserCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79351CA9215D26E60047875C /* GBUserCenter.swift */; };
 		79351CAC215D2C360047875C /* GBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79351CAB215D2C360047875C /* GBLoginViewController.swift */; };
+		960136682169EC6600BDA8EB /* GBProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960136672169EC6600BDA8EB /* GBProperty.swift */; };
+		9601366B2169F29900BDA8EB /* GBPropertyDetailCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9601366A2169F29900BDA8EB /* GBPropertyDetailCellModel.swift */; };
+		9601366D2169F2B000BDA8EB /* GBPropertyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9601366C2169F2B000BDA8EB /* GBPropertyViewModel.swift */; };
 		9624453721675C8000898089 /* GBPropertyDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624453521675C8000898089 /* GBPropertyDetailCell.swift */; };
 		9624453821675C8000898089 /* GBPropertyDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9624453621675C8000898089 /* GBPropertyDetailCell.xib */; };
 		9624453B21675E2000898089 /* GBCookerSummeryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624453921675E2000898089 /* GBCookerSummeryCell.swift */; };
@@ -63,6 +66,9 @@
 		79351CA7215D1F430047875C /* GBTabbarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBTabbarViewController.swift; sourceTree = "<group>"; };
 		79351CA9215D26E60047875C /* GBUserCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBUserCenter.swift; sourceTree = "<group>"; };
 		79351CAB215D2C360047875C /* GBLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBLoginViewController.swift; sourceTree = "<group>"; };
+		960136672169EC6600BDA8EB /* GBProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBProperty.swift; sourceTree = "<group>"; };
+		9601366A2169F29900BDA8EB /* GBPropertyDetailCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBPropertyDetailCellModel.swift; sourceTree = "<group>"; };
+		9601366C2169F2B000BDA8EB /* GBPropertyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBPropertyViewModel.swift; sourceTree = "<group>"; };
 		9624453521675C8000898089 /* GBPropertyDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBPropertyDetailCell.swift; sourceTree = "<group>"; };
 		9624453621675C8000898089 /* GBPropertyDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GBPropertyDetailCell.xib; sourceTree = "<group>"; };
 		9624453921675E2000898089 /* GBCookerSummeryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBCookerSummeryCell.swift; sourceTree = "<group>"; };
@@ -152,51 +158,70 @@
 		79351C94215D19810047875C /* GGbond */ = {
 			isa = PBXGroup;
 			children = (
+				960136692169F27100BDA8EB /* ViewModel */,
+				960136662169EC3D00BDA8EB /* Model */,
 				79351C95215D19810047875C /* AppDelegate.swift */,
 				79351C9C215D19870047875C /* Assets.xcassets */,
+				96479548216604D30041E139 /* GBBaseViewController.swift */,
+				962445492167798E00898089 /* GBCookerCommentsCell.swift */,
+				9624454A2167798E00898089 /* GBCookerCommentsCell.xib */,
+				9624453D2167707B00898089 /* GBCookerDetailViewController.swift */,
+				9624453E2167707B00898089 /* GBCookerDetailViewController.xib */,
+				9624453921675E2000898089 /* GBCookerSummeryCell.swift */,
+				9624453A21675E2000898089 /* GBCookerSummeryCell.xib */,
+				962445452167750800898089 /* GBCookerTitleCell.swift */,
+				962445462167750800898089 /* GBCookerTitleCell.xib */,
 				79351C97215D19810047875C /* GBHomeViewController.swift */,
 				9647952A21638B0F0041E139 /* GBHomeViewController.xib */,
 				79351CAB215D2C360047875C /* GBLoginViewController.swift */,
 				96B1581A2163237600F387C6 /* GBLoginViewController.xib */,
+				9647953C216483640041E139 /* GBPayActionViewController.swift */,
+				9647953D216483640041E139 /* GBPayActionViewController.xib */,
+				964795342163E8BC0041E139 /* GBPayInfoViewController.swift */,
+				964795352163E8BC0041E139 /* GBPayInfoViewController.xib */,
+				96479540216487130041E139 /* GBPaySuccessViewController.swift */,
+				96479541216487130041E139 /* GBPaySuccessViewController.xib */,
+				9647955021666A1A0041E139 /* GBPersonalCenterCell.swift */,
+				9647955121666A1A0041E139 /* GBPersonalCenterCell.xib */,
+				96479538216482D10041E139 /* GBPersonalCenterViewController.swift */,
+				96479539216482D10041E139 /* GBPersonalCenterViewController.xib */,
+				9647954C216667D50041E139 /* GBPersonalHeaderView.swift */,
+				9647954E2166692B0041E139 /* GBPersonalHeaderView.xib */,
+				9647955821670D920041E139 /* GBPropertyCollectionViewCell.swift */,
+				9647955921670D920041E139 /* GBPropertyCollectionViewCell.xib */,
+				9624453521675C8000898089 /* GBPropertyDetailCell.swift */,
+				9624453621675C8000898089 /* GBPropertyDetailCell.xib */,
+				9647955C216711BE0041E139 /* GBPropertyFlowLayout.swift */,
 				9647952C21638FC30041E139 /* GBPropertyTableViewCell.swift */,
 				9647952D21638FC30041E139 /* GBPropertyTableViewCell.xib */,
+				964795302163DECB0041E139 /* GBPropertyViewController.swift */,
+				964795312163DECB0041E139 /* GBPropertyViewController.xib */,
+				96479554216673F10041E139 /* GBSettingViewController.swift */,
+				96479555216673F10041E139 /* GBSettingViewController.xib */,
 				79351CA7215D1F430047875C /* GBTabbarViewController.swift */,
 				79351CA9215D26E60047875C /* GBUserCenter.swift */,
 				79351CA1215D19870047875C /* Info.plist */,
 				96479528216388300041E139 /* UIColor+RGBColor.swift */,
-				964795302163DECB0041E139 /* GBPropertyViewController.swift */,
-				964795312163DECB0041E139 /* GBPropertyViewController.xib */,
-				964795342163E8BC0041E139 /* GBPayInfoViewController.swift */,
-				964795352163E8BC0041E139 /* GBPayInfoViewController.xib */,
-				96479538216482D10041E139 /* GBPersonalCenterViewController.swift */,
-				96479539216482D10041E139 /* GBPersonalCenterViewController.xib */,
-				9647953C216483640041E139 /* GBPayActionViewController.swift */,
-				9647953D216483640041E139 /* GBPayActionViewController.xib */,
-				96479540216487130041E139 /* GBPaySuccessViewController.swift */,
-				96479541216487130041E139 /* GBPaySuccessViewController.xib */,
-				96479548216604D30041E139 /* GBBaseViewController.swift */,
 				9647954A2166086D0041E139 /* UIImage+GB.swift */,
-				9647954C216667D50041E139 /* GBPersonalHeaderView.swift */,
-				9647954E2166692B0041E139 /* GBPersonalHeaderView.xib */,
-				9647955021666A1A0041E139 /* GBPersonalCenterCell.swift */,
-				9647955121666A1A0041E139 /* GBPersonalCenterCell.xib */,
-				96479554216673F10041E139 /* GBSettingViewController.swift */,
-				96479555216673F10041E139 /* GBSettingViewController.xib */,
-				9647955821670D920041E139 /* GBPropertyCollectionViewCell.swift */,
-				9647955921670D920041E139 /* GBPropertyCollectionViewCell.xib */,
-				9647955C216711BE0041E139 /* GBPropertyFlowLayout.swift */,
-				9624453521675C8000898089 /* GBPropertyDetailCell.swift */,
-				9624453621675C8000898089 /* GBPropertyDetailCell.xib */,
-				9624453921675E2000898089 /* GBCookerSummeryCell.swift */,
-				9624453A21675E2000898089 /* GBCookerSummeryCell.xib */,
-				9624453D2167707B00898089 /* GBCookerDetailViewController.swift */,
-				9624453E2167707B00898089 /* GBCookerDetailViewController.xib */,
-				962445452167750800898089 /* GBCookerTitleCell.swift */,
-				962445462167750800898089 /* GBCookerTitleCell.xib */,
-				962445492167798E00898089 /* GBCookerCommentsCell.swift */,
-				9624454A2167798E00898089 /* GBCookerCommentsCell.xib */,
 			);
 			path = GGbond;
+			sourceTree = "<group>";
+		};
+		960136662169EC3D00BDA8EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				960136672169EC6600BDA8EB /* GBProperty.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		960136692169F27100BDA8EB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9601366A2169F29900BDA8EB /* GBPropertyDetailCellModel.swift */,
+				9601366C2169F2B000BDA8EB /* GBPropertyViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +317,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GGbond/Pods-GGbond-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/LeanCloud/LeanCloud.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
@@ -300,6 +326,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LeanCloud.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
@@ -335,6 +362,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9601366B2169F29900BDA8EB /* GBPropertyDetailCellModel.swift in Sources */,
 				79351C98215D19810047875C /* GBHomeViewController.swift in Sources */,
 				96479529216388300041E139 /* UIColor+RGBColor.swift in Sources */,
 				9624453B21675E2000898089 /* GBCookerSummeryCell.swift in Sources */,
@@ -356,9 +384,11 @@
 				9624453721675C8000898089 /* GBPropertyDetailCell.swift in Sources */,
 				96479542216487130041E139 /* GBPaySuccessViewController.swift in Sources */,
 				79351CA8215D1F430047875C /* GBTabbarViewController.swift in Sources */,
+				9601366D2169F2B000BDA8EB /* GBPropertyViewModel.swift in Sources */,
 				9647953E216483640041E139 /* GBPayActionViewController.swift in Sources */,
 				9647955A21670D920041E139 /* GBPropertyCollectionViewCell.swift in Sources */,
 				964795362163E8BC0041E139 /* GBPayInfoViewController.swift in Sources */,
+				960136682169EC6600BDA8EB /* GBProperty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

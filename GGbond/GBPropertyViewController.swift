@@ -8,12 +8,16 @@
 
 import UIKit
 import SnapKit
+import ReactiveCocoa
+import ReactiveSwift
 
 class GBPropertyViewController: GBBaseViewController,UICollectionViewDelegate,UICollectionViewDataSource,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var goPayButton: UIButton!
     var collectionView: UICollectionView!
     @IBOutlet weak var tableView: UITableView!
+    
+    var viewModel : GBPropertyViewModel = GBPropertyViewModel.init()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +50,12 @@ class GBPropertyViewController: GBBaseViewController,UICollectionViewDelegate,UI
         
         self.tableView.delegate = self
         self.tableView.dataSource = self
+    }
+    
+    override func bindViewModel() {
+
+        let(_,_) = Signal<NSInteger, NSError>.pipe()
+
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -82,6 +92,7 @@ class GBPropertyViewController: GBBaseViewController,UICollectionViewDelegate,UI
             let cookerViewController = GBCookerDetailViewController.init()
             self.navigationController?.pushViewController(cookerViewController, animated: true)
         }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

@@ -1,5 +1,9 @@
 PODS:
-  - Alamofire (4.4.0)
+  - Alamofire (4.7.3)
+  - LeanCloud (11.0.1):
+    - LeanCloud/Storage (= 11.0.1)
+  - LeanCloud/Storage (11.0.1):
+    - Alamofire (~> 4.7)
   - ReactiveCocoa (8.0.0):
     - ReactiveSwift (~> 4.0)
   - ReactiveSwift (4.0.0):
@@ -8,25 +12,28 @@ PODS:
   - SnapKit (4.0.1)
 
 DEPENDENCIES:
-  - Alamofire (= 4.4)
+  - Alamofire
+  - LeanCloud
   - ReactiveCocoa
   - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - LeanCloud
     - ReactiveCocoa
     - ReactiveSwift
     - Result
     - SnapKit
 
 SPEC CHECKSUMS:
-  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  LeanCloud: f9776746a4cd62bdb441f2768017a91c9516d219
   ReactiveCocoa: 87cb64d78424d749a0bbfd9b07e4825e8d834066
   ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: eae06ab2b8a792485ab9574732fd92592fb3bb5b
+PODFILE CHECKSUM: 4aceadecdc2e8a8d0b8491acfd9528ca37b99f2f
 
 COCOAPODS: 1.5.3

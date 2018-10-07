@@ -1,6 +1,7 @@
 target 'GGbond' do
     use_frameworks!
-	pod 'Alamofire', '4.4'
+	pod 'Alamofire'
 	pod 'ReactiveCocoa'
     pod 'SnapKit'
+    pod 'LeanCloud'
 end

@@ -76,6 +76,7 @@ class GBCookerDetailViewController: GBBaseViewController,UICollectionViewDelegat
             let cookerViewController = GBCookerDetailViewController.init()
             self.navigationController?.pushViewController(cookerViewController, animated: true)
         }
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
