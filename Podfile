@@ -3,5 +3,4 @@ target 'GGbond' do
 	pod 'Alamofire'
 	pod 'ReactiveCocoa'
     pod 'SnapKit'
-    pod 'LeanCloud'
 end

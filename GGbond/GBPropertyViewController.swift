@@ -54,7 +54,12 @@ class GBPropertyViewController: GBBaseViewController,UICollectionViewDelegate,UI
     
     override func bindViewModel() {
 
-        let(_,_) = Signal<NSInteger, NSError>.pipe()
+//        self.viewModel.reactive.producer(forKeyPath: "property").startWithCompleted {
+//
+//        }
+        self.viewModel.property.signal.observeValues { (value : GBProperty) in
+            self.title = value.title;
+        }
 
     }
     

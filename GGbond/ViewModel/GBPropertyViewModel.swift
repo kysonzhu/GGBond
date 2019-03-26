@@ -7,27 +7,32 @@
 //
 
 import UIKit
-import LeanCloud
+import ReactiveCocoa
+import ReactiveSwift
+
 
 class GBPropertyViewModel: NSObject {
-
-    var property : GBProperty = GBProperty.init()
+    
+    var property = MutableProperty(GBProperty.init())
     
     override init() {
          super.init()
-        let query = LCQuery(className: "Property")
-        query.get("5bb9a86f9f54540070d28c64") { result in
-            switch result {
-            case .success(let property):
-                do {
-                    self.property.title = (property.get("title")?.stringValue)!
-                    self.property.detail = (property.get("detail")?.stringValue)!
-                }
-                
-            case .failure(let error):
-                print(error)
-            }
-        }
+        
+//        let query = LCQuery(className: "Property")
+//        query.get("5bb9a86f9f54540070d28c64") { result in
+//            switch result {
+//            case .success(let property):
+//                do {
+//                    let prop = GBProperty.init()
+//                    prop.title = (property.get("title")?.stringValue)!
+//                    prop.detail = (property.get("detail")?.stringValue)!
+//                    self.property.value = prop
+//                }
+//                
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
     }
 
 }

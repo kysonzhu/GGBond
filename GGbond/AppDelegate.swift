@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import LeanCloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,9 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
-
         // applicationId 即 App Id，applicationKey 是 App Key
-        LeanCloud.initialize(applicationID: "464d3rd62hB80GQms4jC92WR-gzGzoHsz", applicationKey: "xclFt9SGyklanPjobSkRbWtD")
         
         window = UIWindow.init()
         window?.frame = UIScreen.main.bounds
@@ -74,7 +71,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
